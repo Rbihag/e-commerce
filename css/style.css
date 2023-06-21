@@ -445,7 +445,13 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f8f8f8;
+  background-color: #fbfbfb;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.product_img-box:hover {
+  transform: rotateY(180deg);
 }
 
 .product_img-box img {
@@ -499,6 +505,16 @@ a:focus {
 
 .find_container-img {
   padding: 35px 0 35px 40px;
+}
+
+.rounded-image {
+  border-radius: 3%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.rounded-image:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
 }
 
 .shoe_img-box {
